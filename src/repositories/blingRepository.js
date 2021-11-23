@@ -7,6 +7,7 @@ const blingRepository = {
             const dealJson = parseBlingData(deal);
             const xmlData = await parseXml(dealJson);
             await blingApi.post(`/pedido/json/?apikey=${process.env.BLING_KEY}&xml=${xmlData}`);
+            await new Promise(resolve => setTimeout(resolve, 334));
         }
     }
 };
