@@ -15,7 +15,10 @@ module.exports = {
     },
 
     async addMany(data) {
-        const deal = await Deal.insertMany(data);
-        return deal;
+        for await (const deal of data) {
+            try {
+                await Deal.create(deal);
+            } catch (err) {}
+        }
     },
 };

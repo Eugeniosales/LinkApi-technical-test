@@ -3,15 +3,16 @@ const integrateWonDeals = {
         const deals = await pipedriveRepository.getWonDeals();
         const orders = deals.data.data.map((deal) => {
             return {
+              _id: deal.id,
               value: deal.value,
               date: deal.won_time,
               title: deal.title,
               client: deal.person_id.name
             }
         });
-        dealRepository.addMany(orders);
-        blingRepository.addMany(orders);
-        return orders;
+        await dealRepository.addMany(orders);
+        await blingRepository.addMany(orders);
+        return orders;   
     }
 };
 

@@ -2,9 +2,13 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
 const DealSchema = new mongoose.Schema({
+    _id: {
+        type: Number,
+        required: true,
+    },
     date: {
         type: Date,
-        
+        required: true,
     },
     value:{
         type: Number,
