@@ -1,4 +1,4 @@
-# LinkApi-technical-test
+# Pipedrive-Bling-Integration
 API Node.js que que realiza a integração e persistêcia do negócios fechados do CRM Pipedrive e o ERP Bling.
 
 ### Execução
