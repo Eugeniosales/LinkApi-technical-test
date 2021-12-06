@@ -1,11 +1,29 @@
-# Pipedrive-Bling-Integration
-API Node.js que que realiza a integração e persistêcia do negócios fechados do CRM Pipedrive e o ERP Bling.
+<h1 align="center">
+Pipedrive-Bling-Integration
+</h1>
 
-### Execução
+<p align="center">API Node.js que que realiza a integração e persistêcia do negócios fechados do CRM Pipedrive e o ERP Bling.</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/github/license/rocketseat/youtube-challenge-node-kafka?color=%237159c1&logo=mit" alt="License">
+  </a>
+</p>
+
+<hr>
+
+## Participants
+
+| [<img src="https://avatars.githubusercontent.com/u/42457772?v=4" width="75px;"/>](https://github.com/Eugeniosales) |
+| :-----------------------------------------------------------------------------------------------------------------: | 
+|                                       [Eugenio Sales](https://github.com/Eugeniosales)                                        |                                 
+
+
+## Execução
 * Instale as dependências: `npm install`
 * Execute a aplicação: `npm start`
 
-### Execução com Docker
+## Execução com Docker
 
 * Construa a imagem Docker: `sudo docker build -t pipedrive-bling-integration .`
 * Execute a aplicação: `sudo docker run -p 3000:3000 -it pipedrive-bling-integration`
